@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Seymour+One&family=Yeon+Sung&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="lib/flix-carousel/carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="lib/swiffy-slider/swiffy-slider.min.css">
+    <title>RSS</title>
+</head>
+<body>
+    <!-- nav bar -->
+    <nav id="nav-bar-wrap">
+        <div id="nav-bar" class="container">
+            <div id="logo"><img src="./assets/svgs/logo.svg" id="logo-svg-icon" alt="Campint tent svg"> Camptailer</div>
+            <ul id="nav-link-container">
+                <li class="nav-link-wrap"><a class="nav-link" href="#">Link</a></li>
+                <li class="nav-link-wrap"><a class="nav-link" href="#">Link</a></li>
+                <li class="nav-link-wrap"><a class="nav-link" href="#">Link</a></li>
+                <li class="nav-link-wrap"><a class="nav-link" href="#">Link</a></li>
+                <li class="nav-link-wrap"><a class="nav-link" href="#">Link</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- hero image carousel start -->
+    <main id="hero-image-carousel" class="swiffy-slider slider-nav-autoplay slider-nav-autopause slider-nav-square">
+        <div class="slider-container">
+                <div class="hero-image-container-wrap one">
+                    <div class="container hero-image-container one">
+                        <div class="action-button-container one">
+                            <h2>Retail Camping Company</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique adipisci inventore quod magni ut, commodi accusantium officia mollitia cupiditate a?</p>
+                            <div class="center-box action-btn-wrap">
+                                <a href="#" class="action-btn btn">BUY NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image-container-wrap two">
+                    <div class="container hero-image-container">
+                        <div class="action-button-container two">
+                            <h2>Retail Camping Company</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique adipisci inventore quod magni ut, commodi accusantium officia mollitia cupiditate a?</p>
+                            <div class="center-box action-btn-wrap">
+                                <a href="#" class="action-btn btn">BUY NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image-container-wrap three">
+                    <div class="container hero-image-container">
+                        <div class="action-button-container three">
+                            <h2>Retail Camping Company</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique adipisci inventore quod magni ut, commodi accusantium officia mollitia cupiditate a?</p>
+                            <div class="center-box action-btn-wrap">
+                                <a href="#" class="action-btn btn">BUY NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <button type="button" class="slider-nav"></button>
+        <button type="button" class="slider-nav slider-nav-next"></button>
+
+        <div class="slider-indicators">
+            <button class="active"></button>
+            <button></button>
+            <button></button>
+        </div>
+    </main>
+    <!-- hero image carousel end -->
+    <!-- discount section -->
+    <section id="discount-section-wrap" class="section">
+        <div id="discount-section" class="container">
+            <div class="discount-card">
+                <div class="discount-price text-large special-font-face">$70<span class="discount-off-tag text-small">off</span></div>
+                <span class="discount-criteria text-uppercase">on orders of <span class="text-bold">$699+</span></span>
+            </div>
+           <div class="discount-card">
+                <div class="discount-price text-large special-font-face">$140<span class="discount-off-tag text-small">off</span></div>
+                <span class="discount-criteria text-uppercase">on orders of <span class="text-bold">$1,099+</span></span>
+            </div>
+            <div class="discount-card">
+                <div class="discount-price text-large special-font-face">$240<span class="discount-off-tag text-small">off</span></div>
+                <span class="discount-criteria text-uppercase">on orders of <span class="text-bold">$1,599+</span></span>
+            </div>
+             <div class="discount-card">
+                <div class="discount-price text-large special-font-face">$400<span class="discount-off-tag text-small special">off</span></div>
+                <span class="discount-criteria text-uppercase">on orders of <span class="text-bold">$2,099+</span></span>
+            </div>
+        </div>
+    </section>
+    <!-- categories section -->
+    <section id="categories-section-wrap" class="section">
+        <div id="categories-section" class="container">
+            <h2 class="section-title text-large">Categories</h2>
+            <div class="categories-card-section grid-box">
+                <div class="category-card-wrap">
+                    <div id="tents-card" class="category-card">
+                        <div class="category-image-wrap">
+                            <img src="./assets/images/categories/tent.jpg" alt="image of a tent" class="category-image">
+                        </div>
+                    </div>
+                    <p class="label text-center">Tents</p>
+                </div>
+                <div class="category-card-wrap">
+                    <div id="furnitures-card" class="category-card">
+                        <div class="category-image-wrap">
+                            <img src="./assets/images/categories/furniture.webp" alt="image of a tent" class="category-image">
+                        </div>
+                    </div>
+                    <p class="label text-center">Furnitures</p>
+                </div>  
+                <div class="category-card-wrap">
+                    <div id="clothing-card" class="category-card">
+                        <div class="category-image-wrap">
+                            <img src="./assets/images/categories/camping-clothing.jpg" alt="image of a woman camping cloth" class="category-image">
+                        </div>
+                    </div>
+                    <p class="label text-center">Clothing</p>
+                </div>  
+                <div class="category-card-wrap">
+                    <div id="personal-items-card" class="category-card">
+                        <div class="category-image-wrap">
+                            <img src="./assets/images/categories/personal-items.jpg" alt="image of personal items" class="category-image">
+                        </div>    
+                    </div>
+                    <p class="label text-center">Personal Items</p>
+                </div>
+            </div>
+            <div class="center-box view-all-btn-wrap">
+                <a href="#" class="view-all-btn btn">view all</a>
+            </div>
+        </div>
+    </section>
+    <!-- camping furniture section -->
+    <section id="camping-furniture-section-wrap" class="section">
+        <div id="camping-furniture-section" class=" carousel">
+            <h2 class="section-title text-center text-large">Camping furnitures</h2>
+            <div class="camping-furniture-card-section grid-box carousel-row">
+                <div class="camping-furniture-card carousel-tile">
+                    <span class="furniture-image-wrap">
+                        <img class="furniture-image" src="./assets/images/furnitures/vango-table.webp" alt="vango table - furniture image">
+                    </span>  
+                    <div class="furniture-info">
+                        <p>Duo Camping Table</p>
+                        <p class="text-small furniture-description">This granite effect table...</p>
+                        <p class="text-bold furniture-price">$500<span class="text-gold text-small furniture-discount-text">-50%</span></p>
+                        <p class="text-orange special-font-face">VANGO</p>
+                    </div>
+                </div>
+                <div class="camping-furniture-card carousel-tile">
+                    <span class="furniture-image-wrap">
+                        <img class="furniture-image" src="./assets/images/furnitures/folding-chair.webp" alt="folding chair - furniture image">
+                    </span>  
+                    <div class="furniture-info">
+                        <p>Folding Chair</p>
+                        <p class="text-small furniture-description">Practical camping armchair The...</p>
+                        <p class="text-bold furniture-price">$50<span class="text-gold text-small furniture-discount-text">-$10</span></p>
+                        <p class="text-orange special-font-face">CAMPZ</p>
+                    </div>
+                </div>
+                <div class="camping-furniture-card carousel-tile">
+                    <span class="furniture-image-wrap">
+                        <img class="furniture-image" src="./assets/images/furnitures/tripod-camping-stool.webp" alt="vango table - furniture image">
+                    </span>  
+                    <div class="furniture-info">
+                        <p>Tripod Camping Stool</p>
+                        <p class="text-small furniture-description">This folding tripod stool is...</p>
+                        <p class="text-bold furniture-price">$500</p>
+                        <p class="text-orange special-font-face">TRESPASS</p>
+                    </div>
+                </div>
+                <div class="camping-furniture-card carousel-tile">
+                    <span class="furniture-image-wrap">
+                        <img class="furniture-image" src="./assets/images/furnitures/kitchen-table.webp" alt="vango table - furniture image">
+                    </span>  
+                    <div class="furniture-info">
+                        <p>Kitchen Table</p>
+                        <p class="text-small furniture-description">Introducing the Padres from...</p>
+                        <p class="text-bold furniture-price">$500<span class="text-gold text-small furniture-discount-text">5% off</span></p>
+                        <p class="text-orange special-font-face">OUTWELL</p>
+                    </div>
+                </div>
+                <div class="camping-furniture-card carousel-tile">
+                    <span class="furniture-image-wrap">
+                        <img class="furniture-image" src="./assets/images/furnitures/electric-air-bag.jpg" alt="double air bag - furniture image">
+                    </span>  
+                    <div class="furniture-info">
+                        <p>Double Air Bag</p>
+                        <p class="text-small furniture-description">Two adults can enjoy home...</p>
+                        <p class="text-bold furniture-price">$100</p>
+                        <p class="text-orange special-font-face">LIVIVO</p>
+                    </div>
+                </div>
+            </div>
+            <div class="center-box view-all-btn-wrap">
+                <a href="#" class="view-all-btn btn">view all</a>
+            </div>
+        </div>
+    </section>
+    <!-- sales statistics -->
+    <section id="sales-statistics-wrap" class="section">
+        <div id="sales-statistics" class="container">
+            <div class="sales-text-wrap text-center text-uppercase">
+                <span class="text-orange text-bold text-large special-font-face">1000</span> <br/> <span class="text-bold">orders</span> this month
+            </div>
+            <div class="vertical-bar"></div>
+            <div class="sales-text-wrap text-center text-uppercase">
+                <span class="text-orange text-bold text-large special-font-face">10000</span> <br/> <span class="text-bold">visitors</span> this month
+            </div>
+            <div class="vertical-bar"></div>
+            <div class="sales-text-wrap text-center text-uppercase">
+                <span class="text-gold text-bold text-large special-font-face">$1000000</span> <br/> <span class="text-bold">gave away</span> this month
+            </div>
+        </div>
+    </section>
+    <!-- testimonials section -->
+    <section id="testimonials-wrap" class="section">
+        <div id="testimonials" class="container">
+            <div class="testimonials-section-title-wrap">
+                <h2 class="section-title testimonials-section-title text-center text-large text-orange special-font-face">Testimonials</h2>
+                <div class="testimonials-title-underline"></div>
+                <!-- <p class="testimonials-description">What our clients said ?</p> -->
+            </div>
+            <div class="testimonials-card-container grid-box">
+                <div class="testimonial-card">
+                    <p>"I just wanted to share a quick note and let you know that you guys do a really good job. I'm glad I decided to work with you. It's really great how easy your websites are to update and manage"</p>
+                    <div class="reviewer-info-container">
+                        <img class="reviewer-image" src="./assets/images/reviewers/pete.jpeg" alt="pete photo">
+                        <div class="reviewer-info">
+                            <p class="text-small text-bold text-gold">Pete</p>
+                            <p class="text-small">Software Engineer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"I just wanted to share a quick note and let you know that you guys do a really good job. I'm glad I decided to work with you. It's really great how easy your websites are to update and manage"</p>
+                    <div class="reviewer-info-container">
+                        <img class="reviewer-image" src="./assets/images/reviewers/jasmine.jpeg" alt="pete photo">
+                        <div class="reviewer-info">
+                             <p class="text-small text-bold text-gold">Jasmine</p>
+                            <p class="text-small">Designer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer id="footer-wrap" class="section">
+        <div id="footer" class="container">
+            <p>RCC@all_rights_reserved</p>
+            <div class="social-icon-container">
+                <a href="#" class="social-icon"><img class="social-icon-svg" src="./assets/svgs/social-icons/youtube.svg" alt="instagram icon"></a>
+                <a href="#" class="social-icon"><img class="social-icon-svg" src="./assets/svgs/social-icons/tiktok.svg" alt="instagram icon"></a>
+                <a href="#" class="social-icon"><img class="social-icon-svg" src="./assets/svgs/social-icons/twitter.svg" alt="instagram icon"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="lib/swiffy-slider/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+</body>
+</html>
+<!-- NOTE 
+=========
+HOME PAGE -->

@@ -1,0 +1,396 @@
+:root {
+    /* colors */
+    --white: #fff;
+    --white-transparent-bg: #ffffffa0;
+    --black: #000;
+    --gray: #ddd;
+    --orange: #ff774b;
+    --main-background-color: #fafafb;
+    --gold: #daac53;
+    --box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --box-shadow-inner: inset 0 2px 25px 0 rgb(0 0 0 / 0.05);
+    --section-padding: 2rem 0;
+    --section-title-font-size: 1rem;
+    --section-margin-bottom: 0.5rem;
+    --section-title-margin-bottom: 2.5rem;
+    --vertical-bar-height: 1.5rem;
+    --item-card-padding: 1rem;
+    --reviewer-avatar-size: 1.5rem;
+    --social-icon-wrap-size: 1.5rem;
+    --social-icon-size: 1rem;
+}
+html {
+    font-size: 16px;
+}
+body {
+    font-family: 'PT Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: var(--main-background-color);
+}
+p {
+    margin: 0;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.section {
+    padding: var(--section-padding);
+}
+.section-title {
+    font-size: var(--section-title-font-size);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: var(--section-title-margin-bottom);
+}
+.text-orange {
+    color: var(--orange);
+}
+.text-gold {
+    color: var(--gold);
+}
+.text-bold {
+    font-weight: bold;
+}
+.text-center {
+    text-align: center;
+}
+.text-large {
+    font-size: 1.8rem;
+}
+.text-small {
+    font-size: 0.7rem;
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+.special-font-face {
+    font-family: 'Yeon Sung', cursive;
+}
+.btn {
+    padding: .5rem 1.5rem;
+    transition: all ease-in 0.2s;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.view-all-btn {
+    border: 1px solid var(--gray);
+    background-color: var(--white);
+    color: var(--black);
+    font-size: .8rem;
+    margin-top: 1rem;
+}
+.view-all-btn:hover {
+    background-color: var(--main-background-color);
+}
+.action-btn {
+    background-color: var(--orange);
+    color: var(--white);
+    font-size: .8rem;
+    margin-top: 1.5rem;
+}
+.action-btn:hover {
+    opacity: .8;
+}
+.vertical-bar::before {
+    border-left: 2px solid var(--gray);
+    font-size: var(--vertical-bar-height);
+    content: '';
+}
+.grid-box {
+    display: grid;
+    grid-gap: 1.5rem;
+}
+.center-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* nav bar start */
+#logo {
+    font-family: 'Yeon Sung', cursive;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--black);
+    display: flex;
+    justify-content: center;
+}
+#logo-svg-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: cover;
+}
+#nav-bar-wrap {
+   background-color: var(--white);
+   padding: 0.5rem 0;
+   border-bottom: 1px solid var(--gray);
+   position: sticky;
+   top: 0;
+   z-index: 1000;
+}
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#nav-link-container {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+.nav-link-wrap {
+    margin-left: 1rem;
+}
+.nav-link {
+    font-size: 1rem;
+}
+/* nav bar end */
+
+/* main carousel start */
+.slider-container {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.slider-container > li {
+    margin: 0 !important;
+    padding: 0 !important;
+    height: auto;
+}
+.hero-image-container-wrap {
+    width: 100%;
+    height: 80vh !important;
+    background-position: center;
+    background-size: cover;
+}
+.hero-image-container-wrap.one {
+    background-image: url("./assets/images/hero-images/camping-1.jpg");
+}
+.hero-image-container-wrap.two {
+    background-image: url("./assets/images/hero-images/camping-2.jpg");
+}
+.hero-image-container-wrap.three {
+    background-image: url("./assets/images/hero-images/camping-3.jpg");
+}
+.hero-image-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.action-button-container {
+    padding: 1.5rem;
+    box-shadow: var(--box-shadow);
+    background-color: var(--white-transparent-bg);
+    max-width: 350px;
+}
+/* main carousel end */
+
+/* discount section start */
+#discount-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.discount-card {
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    padding: 1rem 1.5rem;
+    
+}
+.discount-card:not(:last-child) {
+    margin-right: 1rem;
+}
+.discount-price {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: var(--orange);
+}
+.discount-criteria {
+    font-size: 1rem;
+}
+.discount-off-tag {
+    margin-left: 0.3em;
+    text-transform: uppercase;
+    background-color: var(--white);
+    padding: 0.3em var(--section-margin-bottom);
+    color: var(--black);
+}
+.discount-off-tag.special {
+    background-color: var(--gold);
+    color: var(--white)
+}
+/* discount section end */
+
+/* categories seciton start */
+#categories-section-wrap {
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    margin-bottom: var(--section-margin-bottom);
+}
+.categories-card-section {
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+}
+.category-card {
+    box-shadow: var(--box-shadow-inner);
+    padding: var(--item-card-padding);
+    background-color: var(--white);
+    margin-bottom: 1rem;
+}
+.category-image-wrap {
+    margin-bottom: var(--section-margin-bottom);
+}
+.category-image {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+/* categories seciton end */
+
+/* camping furniture section start */
+#camping-furniture-section-wrap {
+    margin-bottom: var(--section-margin-bottom);
+}
+.camping-furniture-card-section {
+    grid-template-columns: repeat( auto-fit, minmax(150px, 1fr) );
+}
+.camping-furniture-card {
+    box-shadow: var(--box-shadow);
+    padding: var(--item-card-padding);
+    background-color: var(--white);
+    display: flex!important;
+    flex-direction: row!important;
+}
+.furniture-image-wrap {
+    margin-right: .5rem;
+    width: 70px;
+    flex-grow: 0;
+}
+.furniture-image {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.furniture-info {
+    flex-grow: 1;
+}
+.furniture-price {
+    display: flex !important;
+}
+.furniture-discount-text {
+    margin-left: .5rem;
+}
+.furniture-description {
+    margin-bottom: .3rem;
+}
+/* camping furniture section end */
+
+/* sales statistics start */
+#sales-statistics-wrap {
+    box-shadow: var(--box-shadow);
+    margin-bottom: var(--section-margin-bottom);
+    background-color: var(--white);
+}
+#sales-statistics {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#sales-statistics>div:not(:last-child) {
+     margin-right: 3.5rem;
+}
+/* sales statistics end */
+
+/* testimonials start */
+#testimonials-wrap {
+    background-color: var(--white);
+    margin-bottom: var(--section-margin-bottom);
+    box-shadow: var(--box-shadow);
+    padding-bottom: 3.5rem;
+}
+#testimonials {
+    max-width: 800px;
+}
+.testimonials-section-title-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.testimonials-section-title {
+    margin-bottom: 0;
+}
+.testimonials-title-underline {
+    width: 100px;
+    border-bottom: 2px solid var(--orange);
+    margin-top: .8rem;
+    margin-bottom: 2.6rem;
+}
+.testimonials-card-container {
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    gap: 2rem;
+}
+.testimonials-description {
+    margin-bottom: var(--section-title-margin-bottom);
+}
+.testimonial-card {
+    box-shadow: var(--box-shadow);
+    padding: var(--item-card-padding);
+}
+.reviewer-info-container {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.reviewer-info {
+    margin-left: .5rem;
+}
+.reviewer-image {
+    border-radius: 50%;
+    width: var(--reviewer-avatar-size);
+    height: var(--reviewer-avatar-size);
+    object-fit: cover;
+    object-position: center;
+}
+/* testimonials end */
+
+/* footer start */
+#footer-wrap {
+    box-shadow: var(--box-shadow);
+    background-color: var(--white);
+    padding: 1rem;
+}
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.social-icon {
+    border-radius: 50%;
+    width: var(--social-icon-wrap-size);
+    height: var(--social-icon-wrap-size);
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-icon-container {
+    display: flex;
+}
+.social-icon:not(:last-child) {
+    margin-right: .5rem;
+}
+.social-icon-svg {
+    width: var(--social-icon-size);
+    height: var(--social-icon-size);
+}
+/* footer end */
