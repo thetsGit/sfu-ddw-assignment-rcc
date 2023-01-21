@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="style.css">
     <link href="lib/flix-carousel/carousel.css" rel="stylesheet">
     <link rel="stylesheet" href="lib/swiffy-slider/swiffy-slider.min.css">
+    <link rel="stylesheet" href="lib/hamburger-menu.css">
     <title>RSS</title>
 </head>
 <body>
     <!-- nav bar -->
-    <nav id="nav-bar-wrap">
+    <nav id="nav-bar-wrap" role="navigation">
         <div id="nav-bar" class="container">
             <div id="logo"><img src="./assets/svgs/logo.svg" id="logo-svg-icon" alt="Campint tent svg"> Camptailer</div>
             <ul id="nav-link-container">
@@ -21,6 +22,19 @@
                 <li class="nav-link-wrap"><a class="nav-link" href="#">Link</a></li>
                 <li class="nav-link-wrap"><a class="nav-link" href="#">Link</a></li>
                 <li class="nav-link-wrap"><a class="nav-link" href="#">Link</a></li>
+            </ul>
+        </div>
+        <!-- burger menu for tablets and mobile phones -->
+        <div id="menu-toggle" class="container">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>About</li></a>
+            <a href="#"><li>Info</li></a>
+            <a href="#"><li>Contact</li></a>
             </ul>
         </div>
     </nav>
@@ -74,7 +88,7 @@
     <!-- hero image carousel end -->
     <!-- discount section -->
     <section id="discount-section-wrap" class="section">
-        <div id="discount-section" class="container">
+        <div id="discount-section" class="container grid-box">
             <div class="discount-card">
                 <div class="discount-price text-large special-font-face">$70<span class="discount-off-tag text-small">off</span></div>
                 <span class="discount-criteria text-uppercase">on orders of <span class="text-bold">$699+</span></span>
@@ -253,7 +267,7 @@
     <!-- footer -->
     <footer id="footer-wrap" class="section">
         <div id="footer" class="container">
-            <p>RCC@all_rights_reserved</p>
+            <p class="text-small text-gold" >Camptailer@all_rights_reserved</p>
             <div class="social-icon-container">
                 <a href="#" class="social-icon"><img class="social-icon-svg" src="./assets/svgs/social-icons/youtube.svg" alt="instagram icon"></a>
                 <a href="#" class="social-icon"><img class="social-icon-svg" src="./assets/svgs/social-icons/tiktok.svg" alt="instagram icon"></a>

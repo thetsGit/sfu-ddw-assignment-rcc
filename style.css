@@ -1,5 +1,5 @@
 :root {
-    /* colors */
+    /* colors  */
     --white: #fff;
     --white-transparent-bg: #ffffffa0;
     --black: #000;
@@ -7,8 +7,10 @@
     --orange: #ff774b;
     --main-background-color: #fafafb;
     --gold: #daac53;
+    /* frequently used values */
     --box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
     --box-shadow-inner: inset 0 2px 25px 0 rgb(0 0 0 / 0.05);
+    --container-padding: 0 2rem;
     --section-padding: 2rem 0;
     --section-title-font-size: 1rem;
     --section-margin-bottom: 0.5rem;
@@ -18,9 +20,13 @@
     --reviewer-avatar-size: 1.5rem;
     --social-icon-wrap-size: 1.5rem;
     --social-icon-size: 1rem;
+    /* basic font sizes for devices */
+    --laptop-fs: 16px;
+    --tablet-fs: 15px;
+    --mobile-phone-fs: 14px;
 }
 html {
-    font-size: 16px;
+    font-size: var(--laptop-fs);
 }
 body {
     font-family: 'PT Sans', sans-serif;
@@ -37,6 +43,7 @@ p {
 .container {
     max-width: 1300px;
     margin: 0 auto;
+    padding: var(--container-padding)
 }
 .section {
     padding: var(--section-padding);
@@ -133,6 +140,9 @@ p {
    top: 0;
    z-index: 1000;
 }
+#menu-toggle {
+    display: none!important;
+}
 #nav-bar {
     display: flex;
     flex-direction: row;
@@ -191,16 +201,15 @@ p {
 
 /* discount section start */
 #discount-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: repeat( auto-fit, minmax(150px, 1fr) );
+    grid-gap: .5rem;
 }
 .discount-card {
     background-color: var(--white);
     box-shadow: var(--box-shadow);
     padding: 1rem 1.5rem;
-    
+    flex-basis: 100px;
+    flex-grow: 1;
 }
 .discount-card:not(:last-child) {
     margin-right: 1rem;
@@ -394,3 +403,30 @@ p {
     height: var(--social-icon-size);
 }
 /* footer end */
+
+/* responsive start */
+/* for tablets */
+@media only screen and (max-width: 800px) {
+    html {
+        font-size: var(--tablet-fs);
+    }
+    #sales-statistics-wrap {
+        display: none;
+    }
+    #nav-bar {
+        display: none;
+    }
+    #nav-bar-wrap {
+        background-color: #ffffff80;
+    }
+    #menu-toggle {
+        display: block!important;
+    }
+}
+/* for mobile phones */
+@media only screen and (max-width: 400px) {
+    html {
+        font-size: var(--mobile-phone-fs);
+    }
+}
+/* responsive end */
