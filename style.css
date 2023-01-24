@@ -377,14 +377,16 @@ p {
 /* footer start */
 #footer-wrap {
     box-shadow: var(--box-shadow);
-    background-color: var(--orange);
+    background-color: var(--white);
     padding: 2rem;
+    border-top: 1px solid var(--gray);
+    z-index: 1000;
 }
 #footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    color: var(--white)
+    color: var(--black)
 }
 .social-icon {
     border-radius: 50%;
@@ -410,6 +412,7 @@ p {
 /* furniture page start */
 #furniture-gallery-wrap {
     background-color: var(--main-background-color);
+    margin-bottom: 2rem;
 }
 #furniture-gallery {
     display: flex;
@@ -421,11 +424,11 @@ p {
 #furniture-gallery--title {
     margin-top: 3rem;
 }
-.filter-container {
-    flex-basis: 20rem;
+#furniture-cards-container-wrap {
+    flex-grow: 1;
 }
 #furniture-cards-container {
-    flex-grow: 1;
+    width: 100%;
     grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
 }
 .furniture-card {
@@ -494,7 +497,8 @@ p {
 .filter-container-wrap {
     position: relative;
     padding-left: 1.5rem;
-    flex-basis: 100rem;
+    flex-basis: 20rem;
+    flex-grow: 0;
 }
 .filter-container {
     top: 0;
@@ -675,6 +679,73 @@ p {
 }
 /* basket page end */
 
+/* reviews page start */
+#reviews-cards {
+    grid-template-columns: repeat( auto-fit, minmax(230px, 1fr) );
+    gap: 2rem;
+}
+.review-form {
+	 background-color: #fff;
+	 width: 600px;
+	 height: 450px;
+	 position: relative;
+	 display: grid;
+	 grid-template-columns: 1fr 1fr;
+	 place-items: center;
+	 line-height: 1.5;
+	 box-shadow: 0 20px 30px rgba(0, 0, 0, 0.185);
+}
+ .review-form img {
+	 width: 250px;
+	 height: 400px;
+	 object-fit: cover;
+	 object-position: center;
+}
+ .review-form-text {
+	 padding: 10px 40px 10px 10px;
+}
+ .review-form-text h2 {
+	 font-size: 1.2rem;
+	 color: #1a2250;
+}
+ .review-form-text p {
+	 font-size: 14px;
+	 color: #3b4169;
+	 margin: 10px 0;
+}
+ .review-form-text input, .review-form-text button {
+	 width: 100%;
+	 border: none;
+	 padding: 14px;
+	 border-radius: 3px;
+}
+ .review-form-text input {
+	 border: 2px solid #daddec;
+	 margin: 5px 0 10px;
+	 font-size: 1rem;
+	 color: #656880;
+}
+ .review-form-text button {
+	 background-color: var(--orange);
+	 display: block;
+	 color: #fff;
+	 font-size: 1rem;
+	 cursor: pointer;
+	 box-shadow: 0 5px 20px #89caff 94;
+	 transition: box-shadow 0.3s ease-in-out;
+}
+ .review-form-text button:hover {
+	 box-shadow: none;
+}
+ .review-form-text span {
+	 display: block;
+	 text-align: center;
+	 margin: 20px 0 0;
+	 color: #babdcb;
+	 font-size: 12px;
+}
+/* reviews page end */
+
 /* responsive start */
 /* for tablets */
 @media only screen and (max-width: 800px) {
@@ -698,6 +769,12 @@ p {
     }
     .basket-section--product {
         padding: 1rem;
+    }
+    .filter-container {
+        display: none;
+    }
+    #furniture-gallery {
+        display: block;
     }
 }
 /* for mobile phones */
