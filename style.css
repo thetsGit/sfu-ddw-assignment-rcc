@@ -630,7 +630,7 @@ p {
 	background: var(--orange);
 	color: #fff;
 	float: right;
-	font-size: 22px;
+	font-size: 1.3rem;
 	font-weight: 300;
 	line-height: 49px;
 	margin: 0;
@@ -692,6 +692,12 @@ p {
     }
     #menu-toggle {
         display: block!important;
+    }
+    .basket-section--product header {
+        display: none;
+    }
+    .basket-section--product {
+        padding: 1rem;
     }
 }
 /* for mobile phones */
