@@ -9,6 +9,7 @@
     --gold: #daac53;
     /* frequently used values */
     --box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --box-shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     --box-shadow-inner: inset 0 2px 25px 0 rgb(0 0 0 / 0.05);
     --container-padding: 0 2rem;
     --section-padding: 2rem 0;
@@ -323,10 +324,11 @@ p {
     background-color: var(--white);
     margin-bottom: var(--section-margin-bottom);
     box-shadow: var(--box-shadow);
-    padding-bottom: 5.5rem;
+    padding-bottom: 3.5rem;
 }
 #testimonials {
     max-width: 800px;
+    margin-bottom: 2rem;
 }
 .testimonials-section-title-wrap {
     display: flex;
@@ -375,13 +377,14 @@ p {
 /* footer start */
 #footer-wrap {
     box-shadow: var(--box-shadow);
-    background-color: var(--white);
-    padding: 1rem;
+    background-color: var(--orange);
+    padding: 2rem;
 }
 #footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    color: var(--white)
 }
 .social-icon {
     border-radius: 50%;
@@ -403,6 +406,130 @@ p {
     height: var(--social-icon-size);
 }
 /* footer end */
+
+/* furniture page start */
+#furniture-gallery-wrap {
+    background-color: var(--white);
+}
+#furniture-gallery {
+    display: flex;
+    flex-direction: row;
+    row-gap: 3rem;
+    padding-top: 0;
+    position: relative;
+}
+#furniture-gallery--title {
+    margin-top: 3rem;
+}
+.filter-container {
+    flex-basis: 20rem;
+}
+#furniture-cards-container {
+    flex-grow: 1;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+}
+.furniture-card {
+    width: 100%;
+    transition: all ease-in-out .3s;
+    background-color: var(--white);
+    text-align: center;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+}
+.furniture-card:hover {
+    /* box-shadow: var(--box-shadow-lg); */
+    transform: scale(1.05);
+}
+.furniture-card--product-info-container {
+    background-color: var(--orange);
+    padding: .2rem 0.8rem;
+    color: var(--white);
+    padding-bottom: 0.8rem;
+}
+.furniture-card--image {
+    width: 70%;
+    height: auto;
+    margin: 2rem 0;
+    margin-bottom: 0;
+}
+.furniture-card--product-title {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    letter-spacing: .2rem;
+}
+.furniture-card--product-description {
+    text-transform: capitalize;
+    color:rgb(0 0 0 / 0.5);
+    margin: .3rem 0;
+    font-size: .8rem;
+    padding: 0 1.5rem;
+}
+.furniture-card--product-discounted-price {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.furniture-card--product-discount-percent {
+    margin-left: .3rem;
+    font-size: .8rem;
+}
+.furniture-card--action-btn-wrap {
+    background-color: var(--orange);
+}
+.furniture-card--action-btn {
+    font-size: .8rem;
+    margin-top: 1rem;
+    color: var(--white);
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    background-color: var(--orange);
+    display: block;
+    padding: .8rem 0;
+    transition: all ease-in-out .3s;
+}
+.furniture-card--action-btn:hover {
+    opacity: .5;
+    color: var(--white)
+}
+.filter-container-wrap {
+    position: relative;
+    padding-left: 1.5rem;
+    flex-basis: 100rem;
+}
+.filter-container {
+    top: 0;
+    padding: 1rem;
+    position: sticky;
+}
+.popular-term-container {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: .8rem;
+}
+.filter-container-title {
+    margin-bottom: 1.5rem;
+    color:rgb(0 0 0 / 0.5);
+}
+.popular-term {
+    border: 1px solid var(--gray);
+    padding: .3rem 1rem;
+    background-color: var(--white);
+    margin-right: .8rem;
+    cursor: pointer;
+    color:rgb(0 0 0 / 0.5);
+}
+.popular-term.selected {
+    color: var(--orange);
+    border-color: var(--orange);
+}
+.popular-term:hover {
+    border-color: var(--black);
+}
+.popular-term.selected:hover {
+    background-color: var(--orange);
+    color: var(--white);
+    border-color: var(--orange);
+}
 
 /* responsive start */
 /* for tablets */
