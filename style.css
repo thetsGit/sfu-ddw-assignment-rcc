@@ -776,6 +776,14 @@ p {
     #furniture-gallery {
         display: block;
     }
+    .review-form {
+        grid-template-columns: 1fr;
+        height: auto;
+        width: 100%;
+    }
+     .review-form img {
+        width: 100%;
+     }
 }
 /* for mobile phones */
 @media only screen and (max-width: 400px) {

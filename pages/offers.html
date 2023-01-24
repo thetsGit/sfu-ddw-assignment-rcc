@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Seymour+One&family=Yeon+Sung&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link href="../lib/flix-carousel/carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="../lib/swiffy-slider/swiffy-slider.min.css">
+    <link rel="stylesheet" href="../lib/hamburger-menu.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>RSS</title>
+</head>
+<body>
+    <!-- nav bar -->
+    <nav id="nav-bar-wrap" role="navigation">
+        <div id="nav-bar" class="container">
+            <div id="logo"><img src="../assets/svgs/logo.svg" id="logo-svg-icon" alt="Campint tent svg"> Camptailer</div>
+            <ul id="nav-link-container">
+                <li class="nav-link-wrap"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-link-wrap"><a class="nav-link" href="#">Link</a></li>
+                <li class="nav-link-wrap"><a class="nav-link" href="#">Link</a></li>
+                <li class="nav-link-wrap"><a class="nav-link" href="#">Link</a></li>
+                <li class="nav-link-wrap"><a class="nav-link" href="#">Link</a></li>
+            </ul>
+        </div>
+        <!-- burger menu for tablets and mobile phones -->
+        <div id="menu-toggle" class="container">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>About</li></a>
+            <a href="#"><li>Info</li></a>
+            <a href="#"><li>Contact</li></a>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- hero image carousel start -->
+    <main id="hero-image-carousel" class="swiffy-slider slider-nav-autoplay slider-nav-autopause slider-nav-square">
+        <div class="slider-container">
+                <div class="hero-image-container-wrap one">
+                    <div class="container hero-image-container one">
+                        <div class="action-button-container one">
+                            <h2>Retail Camping Company</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique adipisci inventore quod magni ut, commodi accusantium officia mollitia cupiditate a?</p>
+                            <div class="center-box action-btn-wrap">
+                                <a href="#" class="action-btn btn">BUY NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image-container-wrap two">
+                    <div class="container hero-image-container">
+                        <div class="action-button-container two">
+                            <h2>Retail Camping Company</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique adipisci inventore quod magni ut, commodi accusantium officia mollitia cupiditate a?</p>
+                            <div class="center-box action-btn-wrap">
+                                <a href="#" class="action-btn btn">BUY NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image-container-wrap three">
+                    <div class="container hero-image-container">
+                        <div class="action-button-container three">
+                            <h2>Retail Camping Company</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique adipisci inventore quod magni ut, commodi accusantium officia mollitia cupiditate a?</p>
+                            <div class="center-box action-btn-wrap">
+                                <a href="#" class="action-btn btn">BUY NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <button type="button" class="slider-nav"></button>
+        <button type="button" class="slider-nav slider-nav-next"></button>
+
+        <div class="slider-indicators">
+            <button class="active"></button>
+            <button></button>
+            <button></button>
+        </div>
+    </main>
+    
+    <!-- reviews section -->
+    <main id="reviews-section-container" class="section">
+        <h2 id="reviews-section--title" class="section-title text-large">Special offers</h2>
+        <section id="reviews-section-wrap" class="container">
+            <div id="reviews-section">
+                <div id="reviews-cards" class="grid-box">
+                    <div class="camping-furniture-card">
+                        <span class="furniture-image-wrap">
+                            <img class="furniture-image" src="./assets/images/furnitures/folding-chair.webp" alt="folding chair - furniture image">
+                        </span>  
+                        <div class="furniture-info">
+                            <p>Folding Chair</p>
+                            <p class="text-small furniture-description">Practical camping armchair The...</p>
+                            <p class="text-bold furniture-price">$50<span class="text-gold text-small furniture-discount-text">-$10</span></p>
+                            <p class="text-orange special-font-face">CAMPZ</p>
+                        </div>
+                    </div>
+                    <div class="camping-furniture-card">
+                        <span class="furniture-image-wrap">
+                            <img class="furniture-image" src="./assets/images/furnitures/folding-chair.webp" alt="folding chair - furniture image">
+                        </span>  
+                        <div class="furniture-info">
+                            <p>Folding Chair</p>
+                            <p class="text-small furniture-description">Practical camping armchair The...</p>
+                            <p class="text-bold furniture-price">$50<span class="text-gold text-small furniture-discount-text">-$10</span></p>
+                            <p class="text-orange special-font-face">CAMPZ</p>
+                        </div>
+                    </div>
+                    <div class="camping-furniture-card">
+                        <span class="furniture-image-wrap">
+                            <img class="furniture-image" src="./assets/images/furnitures/folding-chair.webp" alt="folding chair - furniture image">
+                        </span>  
+                        <div class="furniture-info">
+                            <p>Folding Chair</p>
+                            <p class="text-small furniture-description">Practical camping armchair The...</p>
+                            <p class="text-bold furniture-price">$50<span class="text-gold text-small furniture-discount-text">-$10</span></p>
+                            <p class="text-orange special-font-face">CAMPZ</p>
+                        </div>
+                    </div>
+                    <div class="camping-furniture-card">
+                        <span class="furniture-image-wrap">
+                            <img class="furniture-image" src="./assets/images/furnitures/folding-chair.webp" alt="folding chair - furniture image">
+                        </span>  
+                        <div class="furniture-info">
+                            <p>Folding Chair</p>
+                            <p class="text-small furniture-description">Practical camping armchair The...</p>
+                            <p class="text-bold furniture-price">$50<span class="text-gold text-small furniture-discount-text">-$10</span></p>
+                            <p class="text-orange special-font-face">CAMPZ</p>
+                        </div>
+                    </div>
+                    <div class="camping-furniture-card">
+                        <span class="furniture-image-wrap">
+                            <img class="furniture-image" src="./assets/images/furnitures/folding-chair.webp" alt="folding chair - furniture image">
+                        </span>  
+                        <div class="furniture-info">
+                            <p>Folding Chair</p>
+                            <p class="text-small furniture-description">Practical camping armchair The...</p>
+                            <p class="text-bold furniture-price">$50<span class="text-gold text-small furniture-discount-text">-$10</span></p>
+                            <p class="text-orange special-font-face">CAMPZ</p>
+                        </div>
+                    </div>
+                    <div class="camping-furniture-card">
+                        <span class="furniture-image-wrap">
+                            <img class="furniture-image" src="./assets/images/furnitures/folding-chair.webp" alt="folding chair - furniture image">
+                        </span>  
+                        <div class="furniture-info">
+                            <p>Folding Chair</p>
+                            <p class="text-small furniture-description">Practical camping armchair The...</p>
+                            <p class="text-bold furniture-price">$50<span class="text-gold text-small furniture-discount-text">-$10</span></p>
+                            <p class="text-orange special-font-face">CAMPZ</p>
+                        </div>
+                    </div>
+                    <div class="camping-furniture-card">
+                        <span class="furniture-image-wrap">
+                            <img class="furniture-image" src="./assets/images/furnitures/folding-chair.webp" alt="folding chair - furniture image">
+                        </span>  
+                        <div class="furniture-info">
+                            <p>Folding Chair</p>
+                            <p class="text-small furniture-description">Practical camping armchair The...</p>
+                            <p class="text-bold furniture-price">$50<span class="text-gold text-small furniture-discount-text">-$10</span></p>
+                            <p class="text-orange special-font-face">CAMPZ</p>
+                        </div>
+                    </div>
+                    <div class="camping-furniture-card">
+                        <span class="furniture-image-wrap">
+                            <img class="furniture-image" src="./assets/images/furnitures/folding-chair.webp" alt="folding chair - furniture image">
+                        </span>  
+                        <div class="furniture-info">
+                            <p>Folding Chair</p>
+                            <p class="text-small furniture-description">Practical camping armchair The...</p>
+                            <p class="text-bold furniture-price">$50<span class="text-gold text-small furniture-discount-text">-$10</span></p>
+                            <p class="text-orange special-font-face">CAMPZ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+        
+    <!-- footer -->
+    <footer id="footer-wrap" class="section">
+        <div id="footer" class="container">
+            <p>Camptailer@all_rights_reserved</p>
+            <div class="social-icon-container">
+                <a href="#" class="social-icon"><img class="social-icon-svg" src="../assets/svgs/social-icons/youtube.svg" alt="instagram icon"></a>
+                <a href="#" class="social-icon"><img class="social-icon-svg" src="../assets/svgs/social-icons/tiktok.svg" alt="instagram icon"></a>
+                <a href="#" class="social-icon"><img class="social-icon-svg" src="../assets/svgs/social-icons/twitter.svg" alt="instagram icon"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="../lib/swiffy-slider/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="lib/count-up-visible-rcounterup/jquery.rcounter.js"></script>
+    <script src="../index.js"></script>
+</body>
+</html>
+<!-- NOTE 
+=========
+OFFERS PAGE -->
