@@ -10,19 +10,27 @@
     <link rel="stylesheet" href="../lib/swiffy-slider/swiffy-slider.min.css">
     <link rel="stylesheet" href="../lib/hamburger-menu.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/lib/animated-text-search.css">
     <title>RSS</title>
 </head>
 <body>
     <!-- nav bar -->
     <nav id="nav-bar-wrap" role="navigation">
         <div id="nav-bar" class="container">
-            <div id="logo"><img src="../assets/svgs/logo.svg" id="logo-svg-icon" alt="Campint tent svg"> Camptailer</div>
+            <a href="/index.html" id="logo-wrap">
+                <div id="logo"><img src="/assets/svgs/logo.svg" id="logo-svg-icon" alt="Campint tent svg"> Camptailer</div>
+            </a>
+            <form onsubmit="event.preventDefault();" role="search">
+                <label for="search">Search for stuff</label>
+                <input id="search" type="search" placeholder="Search..." autofocus required />
+                <button type="submit">Go</button>    
+            </form>
             <ul id="nav-link-container">
-                <li class="nav-link-wrap"><a class="nav-link" href="/">Home</a></li>
-                <li class="nav-link-wrap"><a class="nav-link" href="#">Link</a></li>
-                <li class="nav-link-wrap"><a class="nav-link" href="#">Link</a></li>
-                <li class="nav-link-wrap"><a class="nav-link" href="#">Link</a></li>
-                <li class="nav-link-wrap"><a class="nav-link" href="#">Link</a></li>
+                <li class="nav-link-wrap"><a class="nav-link active" href="/pages/furnitures.html#furniture-gallery-wrap">Furnitures</a></li>
+                <li class="nav-link-wrap"><a class="nav-link" href="/pages/camping-equipment.html#furniture-gallery-wrap">Equipments</a></li>
+                <li class="nav-link-wrap"><a class="nav-link" href="/pages/offers.html#offers-section-container">Offers</a></li>
+                <li class="nav-link-wrap"><a class="nav-link" href="/pages/reviews.html#reviews-section-container">Reviews</a></li>
+                <li class="nav-link-wrap"><a class="nav-link" id="basket" href="/pages/basket.html#basket-section-wrap"><img src="/assets/svgs/basket-black.svg" alt="basket icon"><span id="basket-count" class="center-box">3</span></a></li>
             </ul>
         </div>
         <!-- burger menu for tablets and mobile phones -->
@@ -32,10 +40,11 @@
             <span></span>
             <span></span>
             <ul id="menu">
-            <a href="#"><li>Home</li></a>
-            <a href="#"><li>About</li></a>
-            <a href="#"><li>Info</li></a>
-            <a href="#"><li>Contact</li></a>
+            <a href="/pages/furnitures.html"><li>Furnitures</li></a>
+            <a href="/pages/camping-equipment.html"><li>Equipments</li></a>
+            <a href="/pages/offers.html"><li>Offers</li></a>
+            <a href="/pages/reviews.html"><li>Reviews</li></a>
+            <a href="/pages/basket.html"><li>Basket</li></a>
             </ul>
         </div>
     </nav>

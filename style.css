@@ -120,8 +120,10 @@ p {
     align-items: center;
 }
 /* nav bar start */
+#logo-wrap {
+    text-decoration: none;
+}
 #logo {
-    font-family: 'Yeon Sung', cursive;
     font-size: 2rem;
     font-weight: bolder;
     color: var(--black);
@@ -132,6 +134,25 @@ p {
     width: 2.5rem;
     height: 2.5rem;
     object-fit: cover;
+}
+#basket {
+    position: relative;
+}
+#basket-count {
+    position: absolute;
+    top: -.5rem;
+    right: -.5rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    background-color: var(--orange);
+    color: var(--white);
+    font-size: .5rem;
+    transition: all ease-in-out .3s;
+    border: 1px solid var(--orange);
+}
+.active #basket-count {
+    display: none;
 }
 #nav-bar-wrap {
    background-color: var(--white);
@@ -159,6 +180,14 @@ p {
 }
 .nav-link {
     font-size: 1rem;
+    text-decoration: none;
+    color: var(--black);
+    opacity: .5;
+    transition: all ease-in-out .3s;
+}
+.nav-link.active, .nav-link:hover {
+    opacity: 1;
+    color: var(--orange);
 }
 /* nav bar end */
 
@@ -680,7 +709,7 @@ p {
 /* basket page end */
 
 /* reviews page start */
-#reviews-cards {
+#reviews-cards, #offers-cards {
     grid-template-columns: repeat( auto-fit, minmax(230px, 1fr) );
     gap: 2rem;
 }
