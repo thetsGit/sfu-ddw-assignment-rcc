@@ -34,6 +34,8 @@ body {
     padding: 0;
     margin: 0;
     background-color: var(--main-background-color);
+    line-height: 1.5rem;
+    letter-spacing: 0.05rem;
 }
 p {
     margin: 0;
