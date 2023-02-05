@@ -18,7 +18,7 @@
     --section-title-margin-bottom: 2.5rem;
     --vertical-bar-height: 1.5rem;
     --item-card-padding: 1rem;
-    --reviewer-avatar-size: 1.5rem;
+    --reviewer-avatar-size: 2rem;
     --social-icon-wrap-size: 1.5rem;
     --social-icon-size: 1rem;
     /* basic font sizes for devices */
@@ -402,6 +402,9 @@ p {
     height: var(--reviewer-avatar-size);
     object-fit: cover;
     object-position: center;
+}
+.reviewer-info p {
+    margin-bottom: 0;
 }
 /* testimonials end */
 
@@ -815,6 +818,18 @@ p {
      .review-form img {
         width: 100%;
      }
+    .section {
+        padding: 0 .5rem;
+    }
+    .container {
+        padding: 0 .5rem;
+    }
+    .basket-section--product {
+        height: auto;
+    }
+    .basket-section--product .qt-minus, .basket-section--product .qt-plus {
+        display: none;
+    }
 }
 /* for mobile phones */
 @media only screen and (max-width: 400px) {
