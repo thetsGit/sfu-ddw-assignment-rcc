@@ -210,13 +210,13 @@ p {
     background-size: cover;
 }
 .hero-image-container-wrap.one {
-    background-image: url("./assets/images/hero-images/camping-1.jpg");
+    background-image: url("../assets/images/hero-images/camping-1.jpg");
 }
 .hero-image-container-wrap.two {
-    background-image: url("./assets/images/hero-images/camping-2.jpg");
+    background-image: url("../assets/images/hero-images/camping-2.jpg");
 }
 .hero-image-container-wrap.three {
-    background-image: url("./assets/images/hero-images/camping-3.jpg");
+    background-image: url("../assets/images/hero-images/camping-3.jpg");
 }
 .hero-image-container {
     height: 100%;

@@ -35,17 +35,18 @@
         </div>
         <!-- burger menu for tablets and mobile phones -->
         <div id="menu-toggle" class="container">
-            <input placeholder="checkbox" type="checkbox" />
+            <input type="checkbox" />
+            <!-- semantically placeholder cannot be used with checkbox -->
             <span></span>
             <span></span>
             <span></span>
             <ul id="menu">
-            <a href="../index.html"><li>Home</li></a>
-            <a href="../pages/furnitures.html"><li>Furnitures</li></a>
-            <a href="../pages/camping-equipment.html"><li>Equipments</li></a>
-            <a href="../pages/offers.html"><li>Offers</li></a>
-            <a href="../pages/reviews.html"><li>Reviews</li></a>
-            <a href="../pages/basket.html"><li>Basket</li></a>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/furnitures.html">Furnitures</a></li>
+            <li><a href="../pages/camping-equipment.html">Equipments</a></li>
+            <li><a href="../pages/offers.html">Offers</a></li>
+            <li><a href="../pages/reviews.html">Reviews</a></li>
+            <li><a href="../pages/basket.html">Basket</a></li>
             </ul>
         </div>
     </nav>
@@ -99,7 +100,7 @@
     </main>
    
     <!-- equipment gallery section -->
-    <main id="furniture-gallery-wrap">
+    <section id="furniture-gallery-wrap">
         <h2 id="furniture-gallery--title" class="section-title text-large">Camping Furnitures</h2>
         <section id="furniture-gallery">
             <!-- filter section --> 
@@ -228,7 +229,7 @@
                 
             </section>
         </section>
-    </main>
+    </section>
         
     <!-- footer -->
     <footer id="footer-wrap" class="section">
