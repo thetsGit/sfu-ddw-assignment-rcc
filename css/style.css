@@ -765,7 +765,7 @@ p {
 	 color: #fff;
 	 font-size: 1rem;
 	 cursor: pointer;
-	 box-shadow: 0 5px 20px #89caff 94;
+	 box-shadow: 0 5px 20px #89caff 94px;
 	 transition: box-shadow 0.3s ease-in-out;
 }
  .review-form-text button:hover {
